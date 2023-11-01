@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Definición del bean AprendizBean -->
+    <bean id="aprendizBean" class="com.example.AprendizBean">
+        <property name="primernombre" value="Juan" />
+        <property name="apellidos" value="Pérez" />
+        <property name="cedula" value="12345678" />
+    </bean>
+</beans>

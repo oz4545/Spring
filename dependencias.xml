@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Definición de un bean Cliente -->
+    <bean id="cliente" class="com.example.Cliente">
+        <!-- Inyección de dependencia de un servicio -->
+        <property name="servicio" ref="miServicio" />
+    </bean>
+
+    <!-- Definición de un bean Servicio -->
+    <bean id="miServicio" class="com.example.ServicioImpl" />
+
+</beans>
